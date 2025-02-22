@@ -24,21 +24,23 @@
             <div style="text-align: center; font-size: large; margin-bottom: 20px; color: #fff;">
                 <!-- Add the logo here -->
                 <img src="{{asset('asset_back/assets/images/nature.jpg')}}" alt="المعهد التقاني للحاسوب"
-                    style="width: 120px; height: auto; margin-bottom: 10px; border-radius: 50%; border: 1px solid #fff;" />
+                    style="width: 80px; height: auto; margin-bottom: 10px; border-radius: 50%; border: 1px solid #fff;" />
                 <br />
                 المعهد التقاني للحاسوب
             </div>
             <div class="login-body">
                 <div class="login-title"><strong>تسجيل الدخول</strong> إلى حسابك</div>
-                <form action="index.html" class="form-horizontal" method="post">
+                <form action="" class="form-horizontal" method="post">
+                    {{csrf_field()}}
+                    @include('_message')
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="البريد الإلكتروني" />
+                            <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <input type="password" class="form-control" placeholder="كلمة المرور" />
+                            <input type="password" class="form-control" name="password" placeholder="كلمة المرور" />
                         </div>
                     </div>
                     <div class="form-group">

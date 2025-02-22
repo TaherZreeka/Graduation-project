@@ -1,3 +1,22 @@
+<!-- MESSAGE BOX-->
+<div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+    <div class="mb-container">
+        <div class="mb-middle text-right">
+            <div class="mb-title"><span class="fa fa-sign-out"></span> تسجيل <strong>الخروج</strong> ؟</div>
+            <div class="mb-content">
+                <p>هل أنت متأكد أنك تريد تسجيل الخروج؟</p>
+                <p>اضغط على "لا" إذا كنت تريد متابعة العمل. اضغط على "نعم" لتسجيل خروج المستخدم الحالي.</p>
+            </div>
+            <div class="mb-footer">
+                <div class="pull-left">
+                    <a href="{{url('logout')}}" class="btn btn-success btn-lg">نعم</a>
+                    <button class="btn btn-default btn-lg mb-control-close">لا</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MESSAGE BOX-->
 <!-- START SCRIPTS -->
 <!-- START PLUGINS -->
 <script type="text/javascript" src="{{asset('asset_back/js/plugins/jquery/jquery.min.js')}}"></script>
